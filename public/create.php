@@ -8,5 +8,4 @@
 
 
     $productController->create();
-    // header("Location:index.php");
 ?>

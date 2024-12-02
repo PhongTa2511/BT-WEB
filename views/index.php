@@ -300,8 +300,8 @@ $(document).ready(function(){
                             <td><?php echo $product["Gia"]; ?></td>
 
                             <td>
-                                <a href="update.php?id=<?=$product["id"]?>" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="delete.php?id=<?=$product["id"]?>" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <a href="update?id=<?=$product["id"]?>" class="edit"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="delete?id=<?=$product["id"]?>" class="delete"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                             </td>
                         </tr>
 					 <?php endforeach;?>

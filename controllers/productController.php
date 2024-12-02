@@ -25,23 +25,23 @@
                 $gia = (int)$price;
                 var_dump($gia);
                 $this->productModel->AddProduct($name,$gia);
+                header("Location:index.php");
             }
             include '../views/new_View.php';
-            // header("Location:index.php");
         }
         public function delete($id){
             $this->productModel->DeleteProduct($id);
             header("Location:index.php");
         }
         public function update($id){
-            // header("Location:crat.php");
+            include '../views/updateView.php';
             if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
+
                 $name = $_POST['name'];
                 $price = $_POST['price'];
                 $this->productModel->updateProduct($id,$name,$price);
-                
+                header("Location:../public/index.php");
             }
-            // header("Location:");
 
         }
 
