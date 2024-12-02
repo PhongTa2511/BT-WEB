@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteRule ^(./*)$ ./public/index.php [QSA,L]
+RewriteRule ^/create$ ./public/create.php
